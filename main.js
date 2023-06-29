@@ -21,11 +21,12 @@ function adicionaLinha() {
 
     linhas += linha;
 
-    inputNomeCadastrado.value = "";
-    inputNumeroTelefone.value = "";
+    inputNomeContato.value = "";
+    inputNumeroContato.value = "";
 
-    function atualizaTabela() {
-        const corpoTabela = document.querySelector("tbody");
-        corpoTabela.innerHTML = linhas;
-    }
+}
+
+function atualizaTabela() {
+    const corpoTabela = document.querySelector("tbody");
+    corpoTabela.innerHTML = linhas;
 }
